@@ -1,0 +1,41 @@
+{
+  "development": {
+    "username": "personal",
+    "password": "setting",
+    "database": "approvalSystem",
+    "host": "DESKTOP-IRSO487\\SQLEXPRESS",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "trustedConnection": true,
+        "instanceName": "SQLEXPRESS"
+      }
+    }
+  },
+  "test": {
+    "username": "personal",
+    "password": "setting",
+    "database": "approvalSystem",
+    "host": "DESKTOP-IRSO487\\SQLEXPRESS",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "trustedConnection": true,
+        "instanceName": "SQLEXPRESS"
+      }
+    }
+  },
+  "production": {
+    "username": "personal",
+    "password": "setting",
+    "database": "approvalSystem",
+    "host": "DESKTOP-IRSO487\\SQLEXPRESS",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "trustedConnection": true,
+        "instanceName": "SQLEXPRESS"
+      }
+    }
+  }
+}

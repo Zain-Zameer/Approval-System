@@ -1,0 +1,72 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.containerForm{
+    text-align: center;
+    position: relative;
+    bottom: -9vw;
+}
+h2{
+    color: white;
+    font-size: 90px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+input{
+    border: none;
+    margin: 11px 0px;
+    border-radius: 5px;
+    padding: 14px 59px;
+    text-align: center;
+}
+
+#Email{
+
+}
+#Password{
+
+}
+a{
+    color: white;
+}
+#signUp{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background-color: #FFB84D;
+    color: black;
+}
+#Clear{
+    background-color: #D3D3D3;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#Clear:hover{
+    background-color: #9c9c9c;
+    color: white;
+}
+#signUp:hover{
+    background-color: #ff7300;
+    color: white;
+}
+.btns{
+    margin: 0px 12px;
+}
+#options{
+    padding: 4px 28px;
+    border: none;
+    border-radius: 9px;
+}
+#options option{
+    border: none;
+    border-radius: 9px;
+}

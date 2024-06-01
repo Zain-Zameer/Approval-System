@@ -1,0 +1,48 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h1{
+    color: white;
+    font-size: 133px;
+}
+.HeadContainer{
+    padding: 53px 0px;
+    text-align: center;
+}
+.container{
+ text-align: center;
+}
+.btns{
+    font-weight: 550;
+    background-color: white;
+    padding: 27px 95px;
+    font-size: 25px;
+    margin: 0px 57px;
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+a:hover{
+    color: white;
+    background-color: #E64833;
+}
+.btns:hover{
+    color: white;
+    background-color: #E64833;
+}
+p{
+    color: white;
+    text-align: center;
+    padding: 138px 0px;
+    width: 65vw;
+    position: absolute;
+    left: 17vw;
+}
+.HEAD{
+    position: relative;
+    bottom: -3vw;
+}

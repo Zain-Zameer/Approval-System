@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "module": "^1.2.5",
+    "msnodesqlv8": "^4.2.1",
+    "mssql": "^10.0.2",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.2",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  }
+}
