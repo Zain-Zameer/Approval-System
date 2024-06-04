@@ -1,0 +1,64 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.RaiseContainer{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+    position: relative;
+    bottom: -5vw;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+.RaiseContainer:hover{
+    background-color: rgb(248, 248, 248);
+    font-size: 20px;
+    text-decoration: underline;
+}
+#requestH3{
+
+}
+#requestPara{
+
+}
+#requestBtn{
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 81px;
+}
+.DraftContainer{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+    position: relative;
+    bottom: -6vw;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+.DraftContainer:hover{
+    background-color: rgb(248, 248, 248);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.SendContainer{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+    position: relative;
+    bottom: -7vw;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+.SendContainer:hover{
+    background-color: rgb(248, 248, 248);
+    font-size: 20px;
+    text-decoration: underline;
+}

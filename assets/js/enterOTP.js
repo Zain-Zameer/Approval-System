@@ -5,12 +5,27 @@ const USERPOSITION = localStorage.getItem("USERPOSITION");
 let USERNEWOTP = localStorage.getItem("USERNEWOTP");
 
 
-
+function generateCustomId() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let customId = '';
+    for (let i = 0; i < 4; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        customId += characters[randomIndex];
+    }
+    return customId;
+}
 
 function Continue(){
     let inputOTP = document.getElementById("otp");
     const takeOTP = inputOTP.value;
+    let customID = generateCustomId();
     if(USERNEWOTP == takeOTP){
+
+        fetch(`/storeNewUser?userName=${USERNAME}&userEmail=${USEREMAIL}&userPassword=${USERPASSWORD}&userPosition=${USERPOSITION}&userID=${customID}`)
+        .then({  
+        })
+        
+        window.location.href = '/logIn';
         console.log("OTP matched")
     }
     else{

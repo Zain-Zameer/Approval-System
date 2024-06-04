@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager View - Approval System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/ManagerLandingPage.css">
+    <script src="/js/ManagerLandingPage.js"></script>
+</head>
+<body>
+    <h1>Manager</h1>
+    <div class="containerViewRaise">
+        <h3>View Raise Requests</h3>
+        <div class="viewBox">
+            
+        </div>
+    </div>
+
+    <div class="containerViewRequestRaise">
+        <h3>Detail Raise Requests</h3>
+        <input type="text" placeholder="Enter Request ID" id="takeRequestID"><br>
+        <button class="btn btn-primary" id="checkDetail">Check</button>
+        <button class="btn btn-primary" id="clearDetail">Clear</button>
+
+        <div class="DetailviewBox">
+            
+        </div>
+    </div>
+
+    <div class="containerStatusRequest">
+        <h3>Update Status Requests</h3>
+        <input type="text" placeholder="Enter Request ID" id="takeRequestIDTOUPD"><br>
+        <select name="selectionStatus" id="selectStatus">
+            <option value="0">Select Status</option>
+            <option value="1">Approve</option>
+            <option value="2">Reject</option>
+        </select>
+        <br>
+        <button class="btn btn-primary" id="sendStatus">Send Status</button>
+    </div>
+    
+</body>
+</html>

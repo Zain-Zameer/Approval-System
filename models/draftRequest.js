@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-    const registeredUser = sequelize.define("RegisteredUsers", {
-        UserId: {
+    const draftRequest = sequelize.define("draftRequests", {
+        DraftId: {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
@@ -9,39 +9,39 @@ module.exports = (sequelize, DataTypes) => {
                 notEmpty: true
             },
         },
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                notEmpty: true
-            },
-        },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true
+                notEmpty: true,
             },
         },
-        password: {
+        departmentNo: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true
+                notEmpty: true,
             },
         },
-        position: {
+        requestedDocumentFileLocation: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notEmpty: true
+                notEmpty: true,
+            },
+        },
+        status: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true,
             },
         },
     }, {
         createdAt: true,
-        updatedAt: false,
+        updatedAt: true,
         id:false,
     });
-    
-    return registeredUser;
-}
+
+    return draftRequest;
+};

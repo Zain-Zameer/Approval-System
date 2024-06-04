@@ -1,0 +1,100 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.containerViewRaise{
+    text-align: center;
+    position: relative;
+    width: 28vw;
+    background-color: white;
+    border-radius: 9px;
+    bottom: -12vw;
+    padding: 0px 19px;
+    height: 36vh;
+}
+.containerStatusRequest{
+    text-align: center;
+    position: relative;
+    width: 28vw;
+    background-color: white;
+    border-radius: 9px;
+    bottom: 26vw;
+    padding: 0px 19px;
+    height: 36vh;
+    left: 69vw;
+}
+.containerViewRequestRaise{
+    background-color: white;
+    width: 28vw;
+    position: relative;
+    left: 33vw;
+    text-align: center;
+    border-radius: 14px;
+    height: 43vh;
+    bottom: 4vw;
+}
+.containerViewRequestRaise input{
+    padding: 1px 40px;
+    margin: 4px 0px;
+}
+.containerStatusRequest input{
+    padding: 1px 40px;
+    margin: 4px 0px;
+}
+.containerStatusRequest button{
+    margin: 10px 0px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+}
+.containerViewRaise ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.DetailviewBox ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.DetailviewBox ul{
+    max-height: 200px;
+    padding: 0;
+    overflow-y: auto;
+    margin: 0;
+}
+.containerViewRaise ul{
+    max-height: 200px;
+    padding: 0;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.containerViewRaise ul li:hover{
+    font-size: 20px;
+    background-color: #ff8800b9;
+    text-decoration: underline;
+}
+
+#clearDetail{
+    background-color: #797979;
+    border: none;
+}

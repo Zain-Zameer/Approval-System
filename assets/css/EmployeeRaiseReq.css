@@ -1,0 +1,27 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    text-align: center;
+    position: relative;
+    bottom: -8vw;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+input{
+    margin: 7px 0px;
+    border: none;
+    padding: 6px 31px;
+    border-radius: 7px;
+    font-size: 1vw;
+}
+#clearBtn{
+    background-color: grey;
+    border: none;
+}

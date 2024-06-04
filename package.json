@@ -1,4 +1,8 @@
 {
+  "name": "approval_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.19.2",
     "fs": "^0.0.1-security",

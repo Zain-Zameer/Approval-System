@@ -1,0 +1,31 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btns{
+    background-color: #fd9844;
+    color: white;
+    border: none;
+}
+.btns:hover{
+    background-color: #ff7301;
+}
+h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.container{
+    text-align: center;
+    position: relative;
+    bottom: -6vw;
+    background-color: white;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

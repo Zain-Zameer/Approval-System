@@ -1,0 +1,67 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.raiseContainer{
+    text-align: center;
+    position: relative;
+    width: 40vw;
+
+}
+#headingOfRaiseReq{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+
+.raiseContainer ul{
+    
+}
+.raiseContainer ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.raiseContainer ul li:hover{
+    font-size: 20px;
+    background-color: #ff8800b9;
+    text-decoration: underline;
+}
+
+.draftContainer{
+    text-align: center;
+    position: relative;
+    width: 40vw;
+    top: -15vw;
+    left: 55vw;
+    display: block;
+}
+#headingOfDraftReq{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+.draftContainer ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.draftContainer ul li:hover{
+    font-size: 20px;
+    background-color: #ff8800b9;
+    text-decoration: underline;
+}

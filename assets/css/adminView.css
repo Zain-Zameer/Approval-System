@@ -1,0 +1,68 @@
+body{
+    background-color: #3D52A0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.raiseContainer{
+    text-align: center;
+    position: relative;
+    width: 40vw;
+    left: -3vw;
+
+}
+.ManagerContainer{
+    text-align: center;
+    position: relative;
+    width: 40vw;
+    left: 60vw;
+    top: -9vw;
+}
+.ManagerContainer ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.ManagerContainer ul li:hover{
+    font-size: 15px;
+    background-color: #ff8800b9;
+    text-decoration: underline;
+}
+.ManagerContainer ul{
+    max-height: 79vh;
+    padding: 0;
+    overflow-y: auto;
+    margin: 0;
+}
+
+
+#headingOfRaiseReq{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+.raiseContainer ul li{
+    list-style-type: none;
+    color: white;
+    background-color: #ff8a00e0;
+    border-radius: 8px;
+    padding: 8px 0px;
+    margin: 16px 13px;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    bottom: -5vw;
+}
+.raiseContainer ul li:hover{
+    font-size: 15px;
+    background-color: #ff8800b9;
+    text-decoration: underline;
+}
+.raiseContainer ul{
+    max-height: 79vh;
+    padding: 0;
+    overflow-y: auto;
+    margin: 0;
+}
