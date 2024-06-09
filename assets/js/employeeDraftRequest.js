@@ -74,7 +74,7 @@ function sendDraft(event){
                 fetch(`/removeDraft?email=${email}&id=${reqID}`)
                 .then({ 
                 })
-                
+                window.location.href = '/EmployeeRaiseRequestSuccess';
 
             }
             else{
@@ -100,6 +100,8 @@ function deleteDraft(event){
                 fetch(`/removeDraft?email=${email}&id=${ID}`)
                 .then({ 
                 })
+                window.location.href = '/requestDraftDel';
+
             }
         })
 }

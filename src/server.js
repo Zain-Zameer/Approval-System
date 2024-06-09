@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
     port:587,
     secure:false,
     auth: {
-        user: 'defaultxt9@gmail.com', // Replace with your Gmail address
-        pass: 'aphu qgmh ntsl oeqa',        // Replace with your Gmail password
+        user: 'xxxxxxxxxxxxxxxxxxx', // Replace with your Gmail address
+        pass: 'xxxxxxxxxxxxxxxxxxxx',        // Replace with your Gmail password
   },
 });
 
@@ -28,7 +28,7 @@ app.use(session({
     name:'sid',
     resave:false,
     saveUninitialized:false,
-    secret:'fatimajinnah',
+    secret:'xxxxxxxxxxxx',
     cookie:{
         maxAge:1000 * 60 * 60 * 2,
         sameSite:true,
@@ -161,6 +161,9 @@ app.get('/employeeDraftRequest',redirectLogin,(req,res)=>{
 
 app.get('/employeeStatus',redirectLogin,(req,res)=>{
     res.sendFile(path.join(__dirname,'../','assets','html/employeeStatus.html'));
+});
+app.get('/requestDraftDel',redirectLogin,(req,res)=>{
+    res.sendFile(path.join(__dirname,'../','assets','html/requestDraftDel.html'));
 });
 
 
