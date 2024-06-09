@@ -1,14 +1,16 @@
 
-const USEREMAIL = localStorage.getItem("USEREMAIL");
+let USEREMAIL = localStorage.getItem("usermail");
 let USERNEWOTP = localStorage.getItem("USERNEWOTP");
 let userPosition = localStorage.getItem("userPosition");
 
-function ContinueLog(){
+function ContinueLog(event) {
+    event.preventDefault();
     let inputOTP = document.getElementById("key");
     const takeOTP = inputOTP.value;
-    if(USERNEWOTP == takeOTP){
-        // success point
-        fetch(`/checkPosition?userEmail=${USEREMAIL}`)
+    let UserEmail = USEREMAIL;
+    if (USERNEWOTP === takeOTP) {
+
+        fetch(`/getUserInfo?UserEmail=${UserEmail}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
@@ -16,29 +18,62 @@ function ContinueLog(){
             return response.json();
         })
         .then(data => {
-            if (data.position) {
-                localStorage.setItem('userPosition', data.position);
-                if (data.position==='Employee'){
-                    window.location.href = '/EmployeeLanded'; 
-                }
-                if (data.position==='Manager'){
-                    window.location.href = '/ManagerView';
-                }
-            } else {
-                console.error('Failed to retrieve position: ', data);
+            let Pos = data.userPosition;
+            if(Pos==='Employee'){
+                fetch('/employeeFor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => {
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                    } else {
+                        // Handle non-redirected response
+                        console.log('Failed to redirect to admin view');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
             }
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
+            if(Pos==='Manager'){
+                fetch('/managerFor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                })
+                .then(response => {
+                    if (response.redirected) {
+                        window.location.href = response.url;
+                    } else {
+                        // Handle non-redirected response
+                        console.log('Failed to redirect to admin view');
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            }
         });
-        
-        
-        
-    }
-    else{
-        console.log("OTP not matched")
-    }
-        
+
+        // // success point
+        // fetch('/checkPosition', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify({ userEmail: UserEmail })
+        // })
+        // .then(response => {
+        //     if (!response.ok) {
+        //         throw new Error('Network response was not ok ' + response.statusText);
+        //     }
+        // })
+        // .catch(error => {
+        //     console.error('There was a problem with the fetch operation:', error);
+        // });
+    } else {
+        console.log("OTP not matched");
+    }  
 }
 
 function resendCodeLog(){
